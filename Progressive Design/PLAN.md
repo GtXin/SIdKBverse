@@ -18,9 +18,9 @@ Detailed Codex behavior rules live in `AGENTS.md`. Folder architecture lives in 
 
 ## Current Focus
 
-- Active step: Step 04 - SOLA / Meister PAL Fundamentals
-- Completed step: Step 03 - Alonso Progressive Lenses Chapter
-- Current decision: finish Round 1 targeted references before Round 2 concept harmonization or Round 3 code reading.
+- Active step: Step 06 - Branch Decision
+- Completed step: Step 05 - Prism Thinning
+- Current decision: proceed to Round 2 atomic concept harmonization before Round 3 code reading. Round 2 notes must be Obsidian-compliant, generic/reusable, and useful for engineering code inspection, clinical application, and industrial/manufacturing reasoning.
 
 ## Source Hygiene Notes
 
@@ -56,28 +56,34 @@ Detailed Codex behavior rules live in `AGENTS.md`. Folder architecture lives in 
    - Next action: optional figure-level review only; otherwise use this note as support for Step 04 and later Round 2 extraction.
 
 4. **Step 04 - SOLA / Meister PAL Fundamentals**
-   - Status: `active`
+   - Status: `done`
    - Source: `Reference/BW Work/01-References_PALdesign/Fundamentals of Progressive Addition Lens Design_MeistgerSOLA1998.pdf`
    - Note: `Notes/Round 1 - Study Notes/Study Note 04 - Fundamentals of Progressive Addition Lens Design.md`
    - Purpose: validate conventional PAL geometry, hard/soft design, corridor/add tradeoffs, and unwanted astigmatism distribution.
    - Last update: 2026-06-27
-   - Next action: read and create the Step 04 study note when requested.
+   - Next action: optional figure-level review only; otherwise use this note as support for Step 06 and later Round 2 extraction.
 
 5. **Step 05 - Prism Thinning**
-   - Status: `optional`
+   - Status: `done`
    - Source: `Reference/BW Work/01-References_PALdesign/understanding prism-thinning_Meister_SOLA_1998.pdf`
    - Note: `Notes/Round 1 - Study Notes/Study Note 05 - Understanding Prism Thinning.md`
    - Purpose: document equi-thinning, yoked vertical prism, frame/fitting dependencies, and thickness results.
-   - Last update: partially sourced into Step 02 note
-   - Next action: create a dedicated note only if more detail is needed.
+   - Last update: 2026-06-27
+   - Next action: use as support for Round 2 notes on PAL thickness geometry, equi-thinning, yoked prism, and PRP verification.
 
 6. **Step 06 - Branch Decision**
-   - Status: `pending`
+   - Status: `done`
    - Source: current Round 1 notes
    - Note: none yet
    - Purpose: decide whether to continue targeted references, begin Round 2 concept harmonization, or start reading Ben's code.
-   - Last update: 2026-06-26
-   - Next action: decide after Step 04.
+   - Last update: 2026-06-27
+   - Decision: begin Round 2 atomic concept harmonization before Round 3 code reading.
+   - Round 2 rule: notes must be independent Obsidian atoms, not chapter sections or Ben-code-only checklists. Each note should answer one precise engineering, clinical, industrial, equation, design-rule, comparison, algorithm, or open-question prompt when opened alone.
+   - Extraction priorities:
+     - Engineering/code inspection: sag surface, sphere/paraboloid examples, sag Hessian matrix, principal curvatures, mean power, surface astigmatism, Hessian approximation limit, meridian profile, polynomial/spline correction, target maps, merit function.
+     - Clinical/application: unwanted astigmatism, clear zones, hard/soft design, corridor/add tradeoffs, swim/skew distortion, fitting geometry, yoked prism, vertical prism imbalance.
+     - Industrial/product: prism thinning, equi-thinning, center/edge thickness, PRP/DRP/NRP markings, frame shape dependence, computed prism thinning, symmetrical/asymmetrical and prescription-specific PAL design.
+   - Next action: start Step 10 Round 2 extraction in small batches, beginning with atoms needed to audit Ben's sag, power, cylinder, target, and optimizer code.
 
 ## Backlog
 
@@ -102,9 +108,20 @@ Detailed Codex behavior rules live in `AGENTS.md`. Folder architecture lives in 
    - Purpose: understand freeform/as-worn/personalized PAL design.
 
 10. **Round 2 Concept Harmonization**
-   - Status: `pending`
+   - Status: `active`
    - Source: completed Round 1 study notes
-   - Purpose: create atomic concept, design-rule, comparison, question, and MOC notes.
+   - Purpose: create Obsidian-compliant atomic notes across engineering/mathematical, clinical/application, and industrial/product layers. The first batch should support detailed review of Ben's MATLAB implementation while remaining generic and reusable.
+   - Current state: full candidate concept pool has been created as raw Round 2 atomic notes. The first engineering/code-audit batch is more detailed; the remaining notes are concise raw atoms ready to deepen during source/code review.
+   - Created first engineering/code-audit atom batch:
+     - `Notes/Round 2 - Atomic Knowledge/Concept - Sag Surface.md`
+     - `Notes/Round 2 - Atomic Knowledge/Concept - Sag Hessian Matrix.md`
+     - `Notes/Round 2 - Atomic Knowledge/Equation - Principal Curvatures From Sag Hessian.md`
+     - `Notes/Round 2 - Atomic Knowledge/Equation - Mean Power From Sag Hessian.md`
+     - `Notes/Round 2 - Atomic Knowledge/Equation - Surface Astigmatism From Sag Hessian.md`
+     - `Notes/Round 2 - Atomic Knowledge/Comparison - Sphere Versus Paraboloid Curvature.md`
+     - `Notes/Round 2 - Atomic Knowledge/Concept - Hessian Approximation Limit.md`
+   - Created full raw atom coverage for the agreed concept list: surface geometry/math, PAL optical design, code-audit parameterization, clinical/wearer application, industrial/manufacturing/product, and bridge atoms.
+   - Next action: deepen and validate notes in small batches while reading Ben's code, beginning with PAL-specific sag construction: progressive sag surface, meridian power/sag profile, zero-cylinder corridor condition, polynomial correction terms, spline correction, target power map, target cylinder map, and merit function.
 
 11. **Round 3 Ben Code Reading / Running**
    - Status: `pending`
@@ -131,3 +148,8 @@ Detailed Codex behavior rules live in `AGENTS.md`. Folder architecture lives in 
 - 2026-06-27: Added source-hygiene note that files larger than 300 MB from Ben's imported `Reference/BW Work` folder were removed or omitted from this study copy.
 - 2026-06-27: Added an `AGENTS.md` rule to document intentional size-based source omissions and not infer technical absence from them.
 - 2026-06-27: Identified oversized git-history blob `Progressive Design/Reference/BW Work/02-ExampleMatlabDesignScripts/PAL_Optimization_Example_00.mat` at 350.3 MB as the cleanup target before pushing.
+- 2026-06-27: Created Step 04 Meister/SOLA Round 1 study note and moved the plan focus to Step 06 branch decision.
+- 2026-06-27: Created Step 05 prism-thinning Round 1 study note and marked the optional prism-thinning step done.
+- 2026-06-27: Resolved Step 06: proceed to Round 2 Obsidian-compliant atomic concept harmonization before code reading, with engineering, clinical/application, and industrial/product atoms prioritized for later Ben-code inspection.
+- 2026-06-27: Created the first Round 2 engineering/code-audit atom batch covering sag surface, sag Hessian, principal curvatures, mean power, surface astigmatism, sphere/paraboloid curvature, and Hessian approximation limits.
+- 2026-06-27: Materialized the full agreed Round 2 candidate concept list as raw atomic notes under `Notes/Round 2 - Atomic Knowledge/`; detailed validation will proceed in small batches during code/source review.

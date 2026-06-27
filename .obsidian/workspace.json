@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Progressive Design/PLAN.md",
+                "file": "Progressive Design/Notes/Round 2 - Atomic Knowledge/Clinical Concept - Binocular Image Mismatch.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PLAN"
+              "title": "Clinical Concept - Binocular Image Mismatch"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 600.5
   },
   "right": {
     "id": "deaab4775150990c",
@@ -94,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Progressive Design/Notes/Round 2 - Atomic Knowledge/Clinical Concept - Binocular Image Mismatch.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Clinical Concept - Binocular Image Mismatch"
             }
           },
           {
@@ -112,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Progressive Design/Notes/Round 2 - Atomic Knowledge/Clinical Concept - Binocular Image Mismatch.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Clinical Concept - Binocular Image Mismatch"
             }
           },
           {
@@ -154,12 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Progressive Design/Notes/Round 2 - Atomic Knowledge/Clinical Concept - Binocular Image Mismatch.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Clinical Concept - Binocular Image Mismatch"
             }
           }
         ]
@@ -182,36 +185,41 @@
   },
   "active": "9cd181b0bbcb3308",
   "lastOpenFiles": [
-    "Progressive Design/Notes/Round 1 - Study Notes/Study Note 03 - Modern Ophthalmic Optics Alonso Progressive Lenses.md",
-    "Progressive Design/Notes/Round 1 - Study Notes/Study Note 02 - Design of Progressive Spectacle Lenses V1.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Bridge - Ben Optimization Targets To Clinical Zones.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Design Rule - Higher Add Increases Astigmatism.md",
     "Progressive Design/PLAN.md",
-    "Progressive Design/Notes/Round 1 - Study Notes/Study Note 01 - PAL Design Summary.md",
-    "Progressive Design/ARCHITECTURE.md",
-    "Progressive Design/Notes/Round 1 - Study Notes/Study Note - PAL Design Summary.md",
-    "Progressive Design/Notes/Round 1 - Study Notes/Study Note - Design of Progressive Spectacle Lenses V1.md",
-    "Progressive Design/Reference/BW Work/00-PowerPointSiummaries/~$PAL Design Summary.pptx",
-    "Progressive Design/Reference/BW Work/00-PowerPointSiummaries/ppt2857.tmp",
-    "Progressive Design/Reference/JS_2017.pdf",
-    "Progressive Design/Reference/BW Work/00-PowerPointSiummaries/ppt75A2.tmp",
-    "Progressive Design/Reference/BeijingIT_2025.pdf",
-    "Progressive Design/Reference/Unconfirmed 419926.crdownload",
-    "Progressive Design/Notes/_tmp_alonso_pages/alonso_prog-08.png",
-    "Progressive Design/Notes/_tmp_alonso_pages/alonso_prog-07.png",
-    "Progressive Design/Notes/_tmp_alonso_pages/alonso_prog-06.png",
-    "Progressive Design/Notes/_tmp_alonso_pages/alonso_prog-05.png",
-    "Progressive Design/Notes/_tmp_alonso_pages/alonso_prog-04.png",
-    "Progressive Design/Notes/_tmp_alonso_pages/alonso_prog-03.png",
-    "Progressive Design/Notes/_tmp_alonso_pages/alonso_prog-02.png",
-    "Progressive Design/Notes/_tmp_alonso_pages/alonso_prog-01.png",
-    "Progressive Design/Notes/_tmp_alonso_pages",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Bridge - PAL Theory To Ben MATLAB Code.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Bridge - Ben Sag Function To PAL Optical Intent.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Bridge - Surface Design To Manufacturing Thickness.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Bridge - Prism Thinning To Binocular Fusion.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Bridge - Fitting Geometry To Position Of Use.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Bridge - Cylinder Map To Hard Soft Design.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Bridge - Corridor Gradient To Clinical Adaptation.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Bridge - Surface Astigmatism To Wearer Blur.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Bridge - Sag Hessian To Surface Power Map.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Industrial Concept - Lab Tolerance Versus Clinical Tolerance.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Industrial Concept - Personalized PAL.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Industrial Concept - Freeform PAL.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Industrial Concept - Asymmetrical PAL Design.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Industrial Concept - Symmetrical PAL Design.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Industrial Concept - Prescription Specific PAL Design.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Industrial Concept - Add Specific PAL Design.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Industrial Concept - Replacement Lens Risk.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Industrial Concept - Product Marking And Verification Workflow.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Industrial Concept - PAL Permanent Engravings.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Industrial Concept - Alignment Reference Marks.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Industrial Concept - NRP.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Industrial Concept - DRP.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Industrial Concept - PRP.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge",
+    "Notes/Round 1 - Study Notes",
+    "Notes",
     "Progressive Design/Reference/Modern Ophthalmic Optics (José Alonso, José A. Gómez-Pedrero etc.) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
-    "Progressive Design/Reference/BW Work/00-PowerPointSiummaries/~$Design of Progressive Spectacle Lenses_V1.pptx",
-    "Progressive Design/Notes/Round 2 - Atomic Knowledge/MOCs",
-    "Progressive Design/AGENTS.md",
-    "Progressive Design/plan.md",
-    "Obisidian Basic/AI  Usage.md",
-    "Obisidian Basic/Rationale.md",
-    "Obisidian Basic/History of the Software.md",
-    "Obisidian Basic/Concepts.md"
+    "Progressive Design/Reference/JS_2017.pdf",
+    "Progressive Design/Reference/BeijingIT_2025.pdf",
+    "Progressive Design/Reference/BW Work/03-MatlabCodeForExamples/MatlabFiles 2/using_hg2.m",
+    "Progressive Design/Reference/BW Work/03-MatlabCodeForExamples/MatlabFiles 2/user_string.m",
+    "Progressive Design/Reference/BW Work/03-MatlabCodeForExamples/MatlabFiles 2/read_write_entire_textfile.m",
+    "Progressive Design/Reference/BW Work/03-MatlabCodeForExamples/MatlabFiles 2/print2eps.m"
   ]
 }

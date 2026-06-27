@@ -57,6 +57,8 @@ Do not organize the knowledge base as book chapters unless the user asks for a b
 
 When creating or updating a MOC, define its purpose clearly and keep it as a navigation surface. A MOC should link to atomic notes, source notes, design rules, code maps, comparisons, and open questions; it should not become a long chapter in disguise. If detailed explanation grows inside a MOC, split it into an atomic note and link to it.
 
+Round 2 concept maps and atomic-note plans must be Obsidian-compliant and generic enough to remain reusable beyond the immediate source or code question. Do not build a concept map as a chapter outline, a one-off reading checklist, or a Ben-code-only table of contents. Build it as a graph of independent notes whose names and scopes can support engineering/code inspection, clinical or wearer application, and industrial/manufacturing/product reasoning. Each atomic note should answer one precise question when opened alone, while still linking to source notes, related concepts, implementation hooks, clinical consequences, and open questions. Good Round 2 atoms may be deep and PhD-level, but they must have one center of gravity: one concept, equation, design rule, comparison, algorithm, clinical application, industrial process, or unresolved question.
+
 Prefer wiki links for internal concepts:
 
 ```markdown
@@ -466,4 +468,3 @@ Avoid:
 - reorganizing the vault before understanding the imported work
 - writing into `Reference/`
 - treating the study vault as a marketing document
-
