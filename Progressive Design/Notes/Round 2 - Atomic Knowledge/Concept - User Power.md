@@ -1,7 +1,7 @@
 ---
 type: concept
 domain: progressive-lens
-status: raw
+status: needs-review
 source:
   - "[[Study Note 02 - Design of Progressive Spectacle Lenses V1]]"
   - "[[Study Note 03 - Modern Ophthalmic Optics Alonso Progressive Lenses]]"
@@ -23,21 +23,21 @@ User power is the as-worn optical power experienced by the eye, including positi
 
 ## Application
 
-### Engineering
+### Clinical / Wearer Example
 
-Use this note as a checklist item when reading design equations, target maps, optimizer variables, or surface-analysis code. Confirm the code object, variable, or calculation that corresponds to this concept before assuming the implementation matches the optical intent.
+A clinical example is a correctly designed PAL performing poorly because fitting height, monocular PD, vertex distance, pantoscopic tilt, or wrap shifts the wearer away from the intended viewing geometry.
 
-### Clinical / Application
+### Engineering / Code Example
 
-Record how this concept affects wearer performance, usable zones, adaptation, binocular comfort, or fitting decisions when that connection is known. If the clinical relevance is indirect, keep the link explicit rather than overstating it.
+In code, this is the boundary between surface-only optimization and a full position-of-use model with eye rotation, frame geometry, lens tilt, and vertex distance.
 
-### Industrial / Product
+### Industrial / Product Example
 
-Record how this concept affects manufacturing, verification, markings, frame/lab workflow, product design, or commercial PAL constraints when applicable.
+In product/lab ordering, these values become personalization or fitting inputs and can change the generated freeform surface or verification assumptions.
 
-### Implementation Hook
+### Measurement / Verification Example
 
-During Ben-code review, search for names, comments, plots, target functions, or class methods that correspond to `User Power`. Add exact file/function references here after the code is read.
+Verify with fitting measurements, layout marks, wearer-position data, and eventually user/as-worn power maps rather than surface power alone.
 
 ## Meta
 

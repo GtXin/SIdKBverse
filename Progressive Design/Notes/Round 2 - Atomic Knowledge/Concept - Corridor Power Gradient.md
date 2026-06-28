@@ -1,7 +1,7 @@
 ---
 type: concept
 domain: progressive-lens
-status: raw
+status: needs-review
 source:
   - "[[Study Note 02 - Design of Progressive Spectacle Lenses V1]]"
   - "[[Study Note 03 - Modern Ophthalmic Optics Alonso Progressive Lenses]]"
@@ -23,21 +23,21 @@ Corridor power gradient is the rate of add-power change along the corridor; it l
 
 ## Application
 
-### Engineering
+### Clinical / Wearer Example
 
-Use this note as a checklist item when reading design equations, target maps, optimizer variables, or surface-analysis code. Confirm the code object, variable, or calculation that corresponds to this concept before assuming the implementation matches the optical intent.
+A patient example is choosing a short-corridor PAL for a shallow frame: near access improves, but peripheral unwanted astigmatism and adaptation load can increase.
 
-### Clinical / Application
+### Engineering / Code Example
 
-Record how this concept affects wearer performance, usable zones, adaptation, binocular comfort, or fitting decisions when that connection is known. If the clinical relevance is indirect, keep the link explicit rather than overstating it.
+In Ben's code, inspect the meridian/add profile and whether the corridor is treated as an umbilical or low-cylinder path while lateral correction terms redistribute cylinder.
 
-### Industrial / Product
+### Industrial / Product Example
 
-Record how this concept affects manufacturing, verification, markings, frame/lab workflow, product design, or commercial PAL constraints when applicable.
+In product design, this drives the trade between compact-frame designs, soft designs, wide clear zones, add range, and market positioning.
 
-### Implementation Hook
+### Measurement / Verification Example
 
-During Ben-code review, search for names, comments, plots, target functions, or class methods that correspond to `Corridor Power Gradient`. Add exact file/function references here after the code is read.
+Check corridor power profile, cylinder contours beside the corridor, and map spacing/gradient for add and corridor-length comparisons.
 
 ## Meta
 

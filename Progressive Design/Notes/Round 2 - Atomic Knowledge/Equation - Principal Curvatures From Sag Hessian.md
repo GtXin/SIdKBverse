@@ -1,7 +1,7 @@
 ---
 type: equation
 domain: progressive-lens
-status: active
+status: needs-review
 source:
   - "[[Study Note 03 - Modern Ophthalmic Optics Alonso Progressive Lenses]]"
   - "[[Study Note 04 - Fundamentals of Progressive Addition Lens Design]]"
@@ -56,30 +56,21 @@ These two identities are the basis for mean power and surface astigmatism calcul
 
 ## Application
 
-### Engineering
+### Clinical / Wearer Example
 
-In code, check whether principal curvatures are calculated by:
+A wearer never sees the Hessian directly, but its derived mean-power and cylinder maps predict where the PAL will give clear distance/near zones versus unwanted blur.
 
-- an explicit eigenvalue calculation
-- the closed-form formulas above
-- a simplified assumption `k1 = zxx`, `k2 = zyy`
+### Engineering / Code Example
 
-The simplified assumption is only valid when `zxy = 0` and the coordinate axes align with principal directions.
+In Ben's MATLAB, inspect the derivative path from sag to `zxx`, `zyy`, `zxy`, then to principal curvatures, mean power, and cylinder. Verify unit scaling before comparing to diopters.
 
-### Clinical / Design
+### Industrial / Product Example
 
-Principal curvatures are the surface-level basis for local sphere/cylinder behavior. Their average maps to mean power; their difference maps to surface astigmatism.
+In freeform design software, this is the internal surface-analysis layer that converts a generated sag surface into maps used for design approval and production release.
 
-### Implementation Hook
+### Measurement / Verification Example
 
-Look for Ben-code variables or methods named around:
-
-- `PCA`
-- `power`
-- `cylinder`
-- `curvature`
-- `surface metrics`
-- `zxx`, `zyy`, `zxy`
+Compare computed power/cylinder maps against plotted contour maps or surface-analysis output; if possible, later compare against Rotlex/lensmeter/freeform verification data.
 
 ## Meta
 

@@ -1,7 +1,7 @@
 ---
 type: concept
 domain: progressive-lens
-status: raw
+status: active
 source:
   - "[[Study Note 03 - Modern Ophthalmic Optics Alonso Progressive Lenses]]"
   - "[[Study Note 04 - Fundamentals of Progressive Addition Lens Design]]"
@@ -22,21 +22,21 @@ Unwanted surface astigmatism is the cylinder-like error generated outside the de
 
 ## Application
 
-### Engineering
+### Clinical / Wearer Example
 
-Use this note as a checklist item when reading design equations, target maps, optimizer variables, or surface-analysis code. Confirm the code object, variable, or calculation that corresponds to this concept before assuming the implementation matches the optical intent.
+A real fitting example is a wearer reporting narrow computer vision, lateral blur, swim on stairs, or needing more head movement; this concept identifies which map or zone explains the complaint. The source-backed observation is that unwanted astigmatism is intrinsic to smooth progressive curvature, not merely an avoidable polishing defect.
 
-### Clinical / Application
+### Engineering / Code Example
 
-Record how this concept affects wearer performance, usable zones, adaptation, binocular comfort, or fitting decisions when that connection is known. If the clinical relevance is indirect, keep the link explicit rather than overstating it.
+In Ben's target maps, inspect whether distance, corridor, near, and periphery receive different power/cylinder targets and weights matching the intended hard/soft behavior. A realistic target map should accept that peripheral cylinder must be redistributed, minimized, or constrained, not set to zero everywhere while mean power varies.
 
-### Industrial / Product
+### Industrial / Product Example
 
-Record how this concept affects manufacturing, verification, markings, frame/lab workflow, product design, or commercial PAL constraints when applicable.
+In product comparison, this is how brands differentiate designs: wider distance/near fields, softer periphery, shorter corridors, or task-specific occupational variants. The industrial design question is where to place the unavoidable astigmatic burden so the product fits its use case.
 
-### Implementation Hook
+### Measurement / Verification Example
 
-During Ben-code review, search for names, comments, plots, target functions, or class methods that correspond to `Unwanted Surface Astigmatism`. Add exact file/function references here after the code is read.
+Use mean-power and cylinder contour maps, power-profile plots, and measured commercial PAL maps to compare the intended distribution with actual lens behavior. Cylinder contours adjacent to the corridor should be interpreted relative to add, corridor length, aperture, and design softness.
 
 ## Meta
 
@@ -47,6 +47,10 @@ This Round 2 atomic note defines `Unwanted Surface Astigmatism` as a reusable Ob
 ### Source Basis
 
 This note is derived from the current Round 1 study layer, especially [[Study Note 03 - Modern Ophthalmic Optics Alonso Progressive Lenses]], [[Study Note 04 - Fundamentals of Progressive Addition Lens Design]]. It should remain generic and reusable; source-specific details should stay linked rather than copied wholesale.
+
+Additional literature observation: Barbero and Gonzalez state that the major PAL limitation is the intrinsic impossibility of providing spatially varying mean curvature without introducing undesired astigmatism, except along umbilical lines. This supports treating unwanted astigmatism as a geometric design consequence.
+
+Citation: Sergio Barbero and Maria del Mar Gonzalez, `Admissible surfaces in progressive addition lenses`, 2020, https://arxiv.org/abs/2007.02710.
 
 ### Related Notes
 

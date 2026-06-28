@@ -1,7 +1,7 @@
 ---
 type: concept
 domain: progressive-lens
-status: raw
+status: active
 source:
   - "[[Study Note 01 - PAL Design Summary]]"
   - "[[Study Note 02 - Design of Progressive Spectacle Lenses V1]]"
@@ -23,21 +23,21 @@ A merit function reduces optical and design errors into a scalar objective for o
 
 ## Application
 
-### Engineering
+### Clinical / Wearer Example
 
-Use this note as a checklist item when reading design equations, target maps, optimizer variables, or surface-analysis code. Confirm the code object, variable, or calculation that corresponds to this concept before assuming the implementation matches the optical intent.
+A clinical application is translating wearer priorities into targets: wider distance zone, tolerable peripheral cylinder, accessible near zone, or smoother adaptation.
 
-### Clinical / Application
+### Engineering / Code Example
 
-Record how this concept affects wearer performance, usable zones, adaptation, binocular comfort, or fitting decisions when that connection is known. If the clinical relevance is indirect, keep the link explicit rather than overstating it.
+In Ben's MATLAB, inspect how named design parameters become optimizer variables, how target/weight maps are built, and how the merit function penalizes power/cylinder errors. Barbero and Gonzalez give a PAL optimization example in which the functional penalizes cylinder and deviation from target mean curvature over the lens domain using weighting functions.
 
-### Industrial / Product
+### Industrial / Product Example
 
-Record how this concept affects manufacturing, verification, markings, frame/lab workflow, product design, or commercial PAL constraints when applicable.
+In production design, these choices determine whether the optimized surface is manufacturable, stable, smooth, and repeatable across prescriptions/adds. A merit function should eventually coexist with manufacturing limits such as maximum attainable curvature or tool constraints, not only optical targets.
 
-### Implementation Hook
+### Measurement / Verification Example
 
-During Ben-code review, search for names, comments, plots, target functions, or class methods that correspond to `Merit Function`. Add exact file/function references here after the code is read.
+Validate by plotting before/after target residuals, power/cylinder maps, convergence history, and constraints after each optimization stage. A good validation plot separates power residuals from cylinder penalties so the tradeoff is visible.
 
 ## Meta
 
@@ -48,6 +48,10 @@ This Round 2 atomic note defines `Merit Function` as a reusable Obsidian knowled
 ### Source Basis
 
 This note is derived from the current Round 1 study layer, especially [[Study Note 01 - PAL Design Summary]], [[Study Note 02 - Design of Progressive Spectacle Lenses V1]]. It should remain generic and reusable; source-specific details should stay linked rather than copied wholesale.
+
+Additional literature observation: Barbero and Gonzalez write a PAL design functional over the lens domain that includes a cylinder penalty term and a target mean-curvature deviation term, each controlled by weighting functions. This directly supports reading Ben's target and weight maps as a local tradeoff specification rather than just plotting aids.
+
+Citation: Sergio Barbero and Maria del Mar Gonzalez, `Admissible surfaces in progressive addition lenses`, 2020, https://arxiv.org/abs/2007.02710.
 
 ### Related Notes
 

@@ -1,7 +1,7 @@
 ---
 type: question
 domain: progressive-lens
-status: raw
+status: needs-review
 source:
   - "[[Study Note 01 - PAL Design Summary]]"
   - "[[Study Note 02 - Design of Progressive Spectacle Lenses V1]]"
@@ -23,21 +23,21 @@ This question asks whether Ben's code evaluates both eyes together, including in
 
 ## Application
 
-### Engineering
+### Clinical / Wearer Example
 
-Use this note as a checklist item when reading design equations, target maps, optimizer variables, or surface-analysis code. Confirm the code object, variable, or calculation that corresponds to this concept before assuming the implementation matches the optical intent.
+Clinical application is the unresolved consequence if the answer is no: the code may optimize a surface that does not yet predict wearer comfort, binocular performance, or fitting outcomes.
 
-### Clinical / Application
+### Engineering / Code Example
 
-Record how this concept affects wearer performance, usable zones, adaptation, binocular comfort, or fitting decisions when that connection is known. If the clinical relevance is indirect, keep the link explicit rather than overstating it.
+Use the question as a code-search task. Search exact terms and adjacent concepts, then record file/function evidence instead of guessing.
 
-### Industrial / Product
+### Industrial / Product Example
 
-Record how this concept affects manufacturing, verification, markings, frame/lab workflow, product design, or commercial PAL constraints when applicable.
+Industrial application is the unresolved consequence if the design ignores production constraints such as thickness, prism, frame shape, markings, or verification points.
 
-### Implementation Hook
+### Measurement / Verification Example
 
-During Ben-code review, search for names, comments, plots, target functions, or class methods that correspond to `Does Ben Model Binocular Performance`. Add exact file/function references here after the code is read.
+Close the question only with evidence: code references, output plots, measurements, or explicit source comments.
 
 ## Meta
 

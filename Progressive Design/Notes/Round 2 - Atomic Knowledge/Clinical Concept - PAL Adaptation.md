@@ -1,7 +1,7 @@
 ---
 type: concept
 domain: progressive-lens
-status: raw
+status: needs-review
 source:
   - "[[Study Note 02 - Design of Progressive Spectacle Lenses V1]]"
   - "[[Study Note 03 - Modern Ophthalmic Optics Alonso Progressive Lenses]]"
@@ -23,21 +23,21 @@ PAL adaptation is the wearer's perceptual and motor adjustment to new power grad
 
 ## Application
 
-### Engineering
+### Clinical / Wearer Example
 
-Use this note as a checklist item when reading design equations, target maps, optimizer variables, or surface-analysis code. Confirm the code object, variable, or calculation that corresponds to this concept before assuming the implementation matches the optical intent.
+A real fitting example is a wearer reporting narrow computer vision, lateral blur, swim on stairs, or needing more head movement; this concept identifies which map or zone explains the complaint.
 
-### Clinical / Application
+### Engineering / Code Example
 
-Record how this concept affects wearer performance, usable zones, adaptation, binocular comfort, or fitting decisions when that connection is known. If the clinical relevance is indirect, keep the link explicit rather than overstating it.
+In Ben's target maps, inspect whether distance, corridor, near, and periphery receive different power/cylinder targets and weights matching the intended hard/soft behavior.
 
-### Industrial / Product
+### Industrial / Product Example
 
-Record how this concept affects manufacturing, verification, markings, frame/lab workflow, product design, or commercial PAL constraints when applicable.
+In product comparison, this is how brands differentiate designs: wider distance/near fields, softer periphery, shorter corridors, or task-specific occupational variants.
 
-### Implementation Hook
+### Measurement / Verification Example
 
-During Ben-code review, search for names, comments, plots, target functions, or class methods that correspond to `PAL Adaptation`. Add exact file/function references here after the code is read.
+Use mean-power and cylinder contour maps, power-profile plots, and possibly measured commercial PAL maps to compare the intended distribution with actual lens behavior.
 
 ## Meta
 

@@ -59,6 +59,14 @@ When creating or updating a MOC, define its purpose clearly and keep it as a nav
 
 Round 2 concept maps and atomic-note plans must be Obsidian-compliant and generic enough to remain reusable beyond the immediate source or code question. Do not build a concept map as a chapter outline, a one-off reading checklist, or a Ben-code-only table of contents. Build it as a graph of independent notes whose names and scopes can support engineering/code inspection, clinical or wearer application, and industrial/manufacturing/product reasoning. Each atomic note should answer one precise question when opened alone, while still linking to source notes, related concepts, implementation hooks, clinical consequences, and open questions. Good Round 2 atoms may be deep and PhD-level, but they must have one center of gravity: one concept, equation, design rule, comparison, algorithm, clinical application, industrial process, or unresolved question.
 
+For Round 2 atomic notes, put the useful knowledge before the scaffolding. Use this section order: `## Definition`, then `## Application`, then `## Meta` at the end. `Definition` should state the concept/equation/rule directly. `Application` means real-life application examples, not generic instructions about how to use the note. Application examples should be concrete enough for an MD/PhD-level optical engineer to connect the atom to practice: clinical/wearer scenarios, industrial/manufacturing/product scenarios, engineering/code-inspection scenarios, measurement/verification scenarios, or design-tradeoff examples. When the Round 1 study notes are not enough, go back to `Reference/` and use targeted internet/literature search to add source-backed examples. Prefer papers, standards, textbooks, manufacturer technical documents, and professional clinical/industrial references over generic web summaries. Put file purpose, source basis, related notes, status notes, implementation hooks, and open questions under `Meta` so the note opens on the definition and real-world application rather than process text.
+
+Do not mark a Round 2 atom as deepened merely because it has plausible application examples. A deepened atom needs literature-level observations: at least one source-backed observation from `Reference/`, PubMed/biomedical literature, standards, textbooks, patents, manufacturer technical literature, or engineering/industrial documentation. For clinical concepts, search PubMed or comparable peer-reviewed clinical/vision-science literature first. For mathematical/engineering concepts, use primary papers, textbooks, or exact code evidence. For industrial concepts, use standards, patents, manufacturer/lab technical documents, or source PDFs. Record citations in `Meta` and summarize the observation in `Application`. If source support is not yet checked, keep status `raw` or `needs-review`.
+
+Deepen Round 2 atoms in small batches, not all at once. A good batch is 3-8 connected notes, such as Hessian/power/cylinder, prism/binocular, fitting/position-of-use, or merit-function/target-map. For each batch, read local `Reference/` first, then perform targeted literature/internet search, then update the individual atom files with concrete observations and citations.
+
+When the user asks for `each`, `every`, `all`, or `the whole folder` to be updated to a higher standard, treat that as a scope contract, not a style suggestion. Before reporting completion, count the affected files, count how many were actually updated to the requested standard, and update a tracker or `PLAN.md` with the remaining count. If only a pilot cluster or partial batch was completed, say so explicitly in the chat response and in the tracker. Never imply that a whole Round 2 folder is complete when only a subset has source-backed depth. For literature-deepening work, non-deepened atoms must remain `needs-review` until their individual files contain cited/source-backed observations.
+
 Prefer wiki links for internal concepts:
 
 ```markdown
@@ -195,19 +203,27 @@ Use source notes for PowerPoints, PDFs, scripts, important code files, and paper
 ```markdown
 # <Type> - <Name>
 
-## File Purpose
+## Definition
 
-## Core Idea
+## Application
 
-## Source Basis
+### Clinical / Wearer Example
 
-## Technical Details
+### Engineering / Code Example
 
-## Optical Consequence
+### Industrial / Product Example
 
-## Related Notes
+### Measurement / Verification Example
 
-## Open Questions
+## Meta
+
+### File Purpose
+
+### Source Basis
+
+### Related Notes
+
+### Open Questions
 ```
 
 Use atomic notes for one concept, equation, design rule, algorithm, comparison, or ambiguity. If one note starts covering multiple concepts, split it.

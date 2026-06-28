@@ -1,7 +1,7 @@
 ---
 type: concept
 domain: progressive-lens
-status: active
+status: needs-review
 source:
   - "[[Study Note 03 - Modern Ophthalmic Optics Alonso Progressive Lenses]]"
   - "[[Study Note 04 - Fundamentals of Progressive Addition Lens Design]]"
@@ -47,33 +47,21 @@ In the low-slope approximation, `H` is used as the local curvature matrix.
 
 ## Application
 
-### Engineering
+### Clinical / Wearer Example
 
-When reading Ben's code, locate the object or calculation that corresponds to `H`. It may appear as:
+A wearer never sees the Hessian directly, but its derived mean-power and cylinder maps predict where the PAL will give clear distance/near zones versus unwanted blur.
 
-- second derivatives of sag
-- local curvature components
-- power/cylinder calculation internals
-- wavefront or surface-analysis class methods
+### Engineering / Code Example
 
-Inspection checklist:
+In Ben's MATLAB, inspect the derivative path from sag to `zxx`, `zyy`, `zxy`, then to principal curvatures, mean power, and cylinder. Verify unit scaling before comparing to diopters.
 
-- Is `zxy` included, or is the code assuming principal axes align with `x/y`?
-- Are derivatives computed at consistent spacing and units?
-- Are derivatives of the full sag surface used, including corrections?
-- Is the Hessian used only as a local low-slope approximation?
+### Industrial / Product Example
 
-### Clinical / Design
+In freeform design software, this is the internal surface-analysis layer that converts a generated sag surface into maps used for design approval and production release.
 
-The Hessian is not clinically visible by itself, but it generates the maps clinicians and designers reason about: mean power, unwanted cylinder, hard/soft distribution, and corridor behavior.
+### Measurement / Verification Example
 
-### Implementation Hook
-
-Likely Ben-code targets:
-
-- surface power/cylinder methods in `C_PAL_Surface`
-- wavefront or surface-analysis methods in `C_Wavefront`
-- derivative grids used for target/merit-function comparison
+Compare computed power/cylinder maps against plotted contour maps or surface-analysis output; if possible, later compare against Rotlex/lensmeter/freeform verification data.
 
 ## Meta
 

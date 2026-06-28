@@ -111,7 +111,7 @@ Detailed Codex behavior rules live in `AGENTS.md`. Folder architecture lives in 
    - Status: `active`
    - Source: completed Round 1 study notes
    - Purpose: create Obsidian-compliant atomic notes across engineering/mathematical, clinical/application, and industrial/product layers. The first batch should support detailed review of Ben's MATLAB implementation while remaining generic and reusable.
-   - Current state: full candidate concept pool has been created as raw Round 2 atomic notes. The first engineering/code-audit batch is more detailed; the remaining notes are concise raw atoms ready to deepen during source/code review.
+   - Current state: full candidate concept pool has been created as Round 2 atomic-note scaffolds. These notes are not yet MD/PhD-level application notes. Every individual concept file must be deepened with literature/source-backed observations inside that file.
    - Created first engineering/code-audit atom batch:
      - `Notes/Round 2 - Atomic Knowledge/Concept - Sag Surface.md`
      - `Notes/Round 2 - Atomic Knowledge/Concept - Sag Hessian Matrix.md`
@@ -121,7 +121,19 @@ Detailed Codex behavior rules live in `AGENTS.md`. Folder architecture lives in 
      - `Notes/Round 2 - Atomic Knowledge/Comparison - Sphere Versus Paraboloid Curvature.md`
      - `Notes/Round 2 - Atomic Knowledge/Concept - Hessian Approximation Limit.md`
    - Created full raw atom coverage for the agreed concept list: surface geometry/math, PAL optical design, code-audit parameterization, clinical/wearer application, industrial/manufacturing/product, and bridge atoms.
-   - Next action: deepen and validate notes in small batches while reading Ben's code, beginning with PAL-specific sag construction: progressive sag surface, meridian power/sag profile, zero-cylinder corridor condition, polynomial correction terms, spline correction, target power map, target cylinder map, and merit function.
+   - Concept list / deepening checklist: `Notes/Round 2 - Atomic Knowledge/Round 2 Concept List - Application Deepening Plan.md`
+   - Note layout rule: Round 2 atoms now put `Definition` and real-life `Application` examples first, with process/source/link material grouped under final `Meta`.
+   - Application rule: `Application` must mean concrete clinical/wearer, engineering/code, industrial/product, or measurement/verification examples. For MD/PhD-level depth, deepen each atom by returning to `Reference/` and using targeted literature/internet searches for papers, standards, textbooks, professional references, manufacturer technical documents, and industrial examples. Generic "use this note" prose has been removed from the current Round 2 files and replaced with application-example sections, but most are still raw and need evidence-backed observations.
+   - Literature-depth rule: a deepened atom needs at least one source-backed observation from local `Reference/`, PubMed/clinical literature, standards, textbooks, patents, manufacturer technical documents, or engineering/industrial documentation. Clinical concepts should search PubMed or comparable peer-reviewed vision-science literature first. Mathematical/code concepts should use textbooks, papers, and Ben-code evidence. Industrial concepts should use standards, patents, manufacturer/lab documents, and source PDFs.
+   - Next action: deepen and validate notes in small literature-backed batches of 3-8 connected atoms. Recommended first batch: Hessian/power/cylinder atoms, because they support Ben-code inspection and map directly to surface power/cylinder calculations.
+   - First literature-backed deepening batch completed for:
+     - `Concept - Minkwitz Theorem.md`
+     - `Concept - Surface Compatibility.md`
+     - `Concept - Unwanted Surface Astigmatism.md`
+     - `Concept - Merit Function.md`
+   - Batch source: Barbero and Gonzalez, `Admissible surfaces in progressive addition lenses`, 2020.
+   - Literature deepening tracker: `Notes/Round 2 - Atomic Knowledge/Round 2 Literature Deepening Tracker.md`
+   - Status correction: all non-deepened Round 2 atom files are marked `needs-review`; the four first-pass literature-backed files are marked `active`, not final.
 
 11. **Round 3 Ben Code Reading / Running**
    - Status: `pending`
@@ -153,3 +165,10 @@ Detailed Codex behavior rules live in `AGENTS.md`. Folder architecture lives in 
 - 2026-06-27: Resolved Step 06: proceed to Round 2 Obsidian-compliant atomic concept harmonization before code reading, with engineering, clinical/application, and industrial/product atoms prioritized for later Ben-code inspection.
 - 2026-06-27: Created the first Round 2 engineering/code-audit atom batch covering sag surface, sag Hessian, principal curvatures, mean power, surface astigmatism, sphere/paraboloid curvature, and Hessian approximation limits.
 - 2026-06-27: Materialized the full agreed Round 2 candidate concept list as raw atomic notes under `Notes/Round 2 - Atomic Knowledge/`; detailed validation will proceed in small batches during code/source review.
+- 2026-06-27: Reorganized all Round 2 atoms into definition-first layout: `Definition`, `Application`, then final `Meta` for file purpose, source basis, links, and open questions.
+- 2026-06-27: Clarified that Round 2 `Application` means real-life clinical, engineering/code, industrial/product, or measurement examples, source-backed by `Reference/` and targeted literature/internet search when Round 1 notes are insufficient.
+- 2026-06-27: Added `Round 2 Concept List - Application Deepening Plan.md` to turn the concept list into a source-backed application deepening checklist by cluster.
+- 2026-06-27: Updated every Markdown file in `Notes/Round 2 - Atomic Knowledge/` so `Application` contains concrete example sections for clinical/wearer, engineering/code, industrial/product, and measurement/verification use instead of generic process text.
+- 2026-06-27: Raised the Round 2 deepening bar: each atom must be deepened with literature-level, source-backed observations and citations; current raw examples are scaffolds, not final MD/PhD-level application notes.
+- 2026-06-27: Deepened the first Round 2 literature-backed cluster using Barbero and Gonzalez 2020: Minkwitz theorem, surface compatibility, unwanted surface astigmatism, and merit function.
+- 2026-06-27: Corrected Round 2 status: every concept file requires individual literature/source-backed deepening; added `Round 2 Literature Deepening Tracker.md` and marked non-deepened atoms `needs-review`.

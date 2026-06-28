@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Progressive Design/Notes/Round 2 - Atomic Knowledge/Clinical Concept - Binocular Image Mismatch.md",
+                "file": "Progressive Design/Notes/Round 2 - Atomic Knowledge/Clinical Concept - Monocular PD In PAL Fitting.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Clinical Concept - Binocular Image Mismatch"
+              "title": "Clinical Concept - Monocular PD In PAL Fitting"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Progressive Design/Notes/Round 2 - Atomic Knowledge/Clinical Concept - Binocular Image Mismatch.md",
+                "file": "Progressive Design/Notes/Round 2 - Atomic Knowledge/Clinical Concept - Monocular PD In PAL Fitting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Clinical Concept - Binocular Image Mismatch"
+              "title": "Backlinks for Clinical Concept - Monocular PD In PAL Fitting"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Progressive Design/Notes/Round 2 - Atomic Knowledge/Clinical Concept - Binocular Image Mismatch.md",
+                "file": "Progressive Design/Notes/Round 2 - Atomic Knowledge/Clinical Concept - Monocular PD In PAL Fitting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Clinical Concept - Binocular Image Mismatch"
+              "title": "Outgoing links from Clinical Concept - Monocular PD In PAL Fitting"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Progressive Design/Notes/Round 2 - Atomic Knowledge/Clinical Concept - Binocular Image Mismatch.md",
+                "file": "Progressive Design/Notes/Round 2 - Atomic Knowledge/Clinical Concept - Monocular PD In PAL Fitting.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Clinical Concept - Binocular Image Mismatch"
+              "title": "Outline of Clinical Concept - Monocular PD In PAL Fitting"
             }
           }
         ]
@@ -185,32 +185,32 @@
   },
   "active": "9cd181b0bbcb3308",
   "lastOpenFiles": [
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Round 2 Literature Deepening Tracker.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Clinical Concept - Peripheral Blur.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Clinical Concept - Pantoscopic Tilt.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Clinical Concept - PAL Adaptation.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Clinical Concept - Monocular PD In PAL Fitting.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Clinical Concept - Head Movement Versus Eye Movement.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Clinical Concept - Ghost Reflections From Prism.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Clinical Concept - Fitting Height.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Clinical Concept - Fitting Cross.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Clinical Concept - Clear Zone Width.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Bridge - Ben Sag Function To PAL Optical Intent.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Clinical Concept - Binocular Image Mismatch.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Bridge - Surface Design To Manufacturing Thickness.md",
     "Progressive Design/Notes/Round 2 - Atomic Knowledge/Bridge - Ben Optimization Targets To Clinical Zones.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Round 2 Concept List - Application Deepening Plan.md",
+    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Bridge - Cylinder Map To Hard Soft Design.md",
     "Progressive Design/Notes/Round 2 - Atomic Knowledge/Design Rule - Higher Add Increases Astigmatism.md",
     "Progressive Design/PLAN.md",
     "Progressive Design/Notes/Round 2 - Atomic Knowledge/Bridge - PAL Theory To Ben MATLAB Code.md",
-    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Bridge - Ben Sag Function To PAL Optical Intent.md",
-    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Bridge - Surface Design To Manufacturing Thickness.md",
     "Progressive Design/Notes/Round 2 - Atomic Knowledge/Bridge - Prism Thinning To Binocular Fusion.md",
     "Progressive Design/Notes/Round 2 - Atomic Knowledge/Bridge - Fitting Geometry To Position Of Use.md",
-    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Bridge - Cylinder Map To Hard Soft Design.md",
     "Progressive Design/Notes/Round 2 - Atomic Knowledge/Bridge - Corridor Gradient To Clinical Adaptation.md",
     "Progressive Design/Notes/Round 2 - Atomic Knowledge/Bridge - Surface Astigmatism To Wearer Blur.md",
     "Progressive Design/Notes/Round 2 - Atomic Knowledge/Bridge - Sag Hessian To Surface Power Map.md",
     "Progressive Design/Notes/Round 2 - Atomic Knowledge/Industrial Concept - Lab Tolerance Versus Clinical Tolerance.md",
     "Progressive Design/Notes/Round 2 - Atomic Knowledge/Industrial Concept - Personalized PAL.md",
-    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Industrial Concept - Freeform PAL.md",
-    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Industrial Concept - Asymmetrical PAL Design.md",
-    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Industrial Concept - Symmetrical PAL Design.md",
-    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Industrial Concept - Prescription Specific PAL Design.md",
-    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Industrial Concept - Add Specific PAL Design.md",
-    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Industrial Concept - Replacement Lens Risk.md",
-    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Industrial Concept - Product Marking And Verification Workflow.md",
-    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Industrial Concept - PAL Permanent Engravings.md",
-    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Industrial Concept - Alignment Reference Marks.md",
-    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Industrial Concept - NRP.md",
-    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Industrial Concept - DRP.md",
-    "Progressive Design/Notes/Round 2 - Atomic Knowledge/Industrial Concept - PRP.md",
     "Progressive Design/Notes/Round 2 - Atomic Knowledge",
     "Notes/Round 1 - Study Notes",
     "Notes",

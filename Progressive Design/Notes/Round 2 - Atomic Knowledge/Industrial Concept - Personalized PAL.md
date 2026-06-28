@@ -1,7 +1,7 @@
 ---
 type: concept
 domain: progressive-lens
-status: raw
+status: needs-review
 source:
   - "[[Study Note 02 - Design of Progressive Spectacle Lenses V1]]"
   - "[[Study Note 03 - Modern Ophthalmic Optics Alonso Progressive Lenses]]"
@@ -23,21 +23,21 @@ A personalized PAL incorporates wearer, frame, prescription, or position-of-use 
 
 ## Application
 
-### Engineering
+### Clinical / Wearer Example
 
-Use this note as a checklist item when reading design equations, target maps, optimizer variables, or surface-analysis code. Confirm the code object, variable, or calculation that corresponds to this concept before assuming the implementation matches the optical intent.
+A wearer-facing example is a personalized or asymmetric PAL improving gaze-zone alignment or nasal/temporal balance compared with a generic symmetric design.
 
-### Clinical / Application
+### Engineering / Code Example
 
-Record how this concept affects wearer performance, usable zones, adaptation, binocular comfort, or fitting decisions when that connection is known. If the clinical relevance is indirect, keep the link explicit rather than overstating it.
+In code, look for whether design parameters change by add, prescription, eye side, frame, or wearer geometry rather than using one generic surface.
 
-### Industrial / Product
+### Industrial / Product Example
 
-Record how this concept affects manufacturing, verification, markings, frame/lab workflow, product design, or commercial PAL constraints when applicable.
+In product design, this corresponds to multi-design, prescription-specific, right/left, and freeform manufacturing strategies.
 
-### Implementation Hook
+### Measurement / Verification Example
 
-During Ben-code review, search for names, comments, plots, target functions, or class methods that correspond to `Personalized PAL`. Add exact file/function references here after the code is read.
+Compare right/left maps, add-specific design variants, or personalized order data against the delivered lens markings and measured maps.
 
 ## Meta
 

@@ -1,7 +1,7 @@
 ---
 type: comparison
 domain: progressive-lens
-status: active
+status: needs-review
 source:
   - "[[Study Note 03 - Modern Ophthalmic Optics Alonso Progressive Lenses]]"
 related:
@@ -62,17 +62,21 @@ Away from the vertex:
 
 ## Application
 
-### Engineering
+### Clinical / Wearer Example
 
-When inspecting Ben's base sphere/asphere code:
+For the wearer, the surface type matters through effective power, peripheral error, distortion, thickness, and how stable the image feels away from the fitting cross.
 
-- do not treat a changing raw Hessian of exact sphere sag as proof that the sphere's true curvature changed
-- check whether the code intentionally uses the low-slope/paraboloid approximation
-- identify whether `SURF.sphere` and `SURF.k` produce exact conic sag or local quadratic sag
+### Engineering / Code Example
 
-### Clinical / Design
+In Ben's sag code, identify whether the base term is exact sphere/conic sag, a local paraboloid approximation, a toric/cylindrical component, or a progressive/freeform correction.
 
-For typical ophthalmic PAL design maps, low-slope Hessian methods can be useful and fast. But full as-worn/user-power evaluation should not confuse projected sag-Hessian behavior with invariant surface curvature or ray-traced power.
+### Industrial / Product Example
+
+In manufacturing, this maps to whether the surface can be generated as a standard base curve, toric/aspheric surface, or freeform digital surface.
+
+### Measurement / Verification Example
+
+Check sag, slope, and curvature maps over aperture; for a sphere/paraboloid comparison, verify that exact curvature and raw sag Hessian are not being conflated off vertex.
 
 ## Meta
 

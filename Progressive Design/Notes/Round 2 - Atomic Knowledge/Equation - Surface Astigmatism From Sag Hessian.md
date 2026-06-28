@@ -1,7 +1,7 @@
 ---
 type: equation
 domain: progressive-lens
-status: active
+status: needs-review
 source:
   - "[[Study Note 03 - Modern Ophthalmic Optics Alonso Progressive Lenses]]"
   - "[[Study Note 04 - Fundamentals of Progressive Addition Lens Design]]"
@@ -46,31 +46,21 @@ If `zxx = zyy` and `zxy = 0`, the local surface is umbilical in the low-slope mo
 
 ## Application
 
-### Engineering
+### Clinical / Wearer Example
 
-Code audit questions:
+A wearer never sees the Hessian directly, but its derived mean-power and cylinder maps predict where the PAL will give clear distance/near zones versus unwanted blur.
 
-- Does the code include the `4 zxy^2` term?
-- Does the code use absolute eigenvalue difference?
-- Is cylinder reported as magnitude only or with axis?
-- Are surface-cylinder targets or penalties based on this formula?
-- Does Ben enforce or approximate zero cylinder along the progressive corridor?
+### Engineering / Code Example
 
-### Clinical / Design
+In Ben's MATLAB, inspect the derivative path from sag to `zxx`, `zyy`, `zxy`, then to principal curvatures, mean power, and cylinder. Verify unit scaling before comparing to diopters.
 
-This formula produces the surface-level unwanted-cylinder map that maps to blur, clear-zone width, hard/soft distribution, and corridor tradeoffs. It is not the same as full as-worn user cylinder, but it is an important design proxy.
+### Industrial / Product Example
 
-### Implementation Hook
+In freeform design software, this is the internal surface-analysis layer that converts a generated sag surface into maps used for design approval and production release.
 
-Search Ben's code for:
+### Measurement / Verification Example
 
-- `cyl`
-- `cylinder`
-- `astig`
-- `target_cylinder`
-- `cyl_wt`
-- `PCA`
-- surface metric methods
+Compare computed power/cylinder maps against plotted contour maps or surface-analysis output; if possible, later compare against Rotlex/lensmeter/freeform verification data.
 
 ## Meta
 

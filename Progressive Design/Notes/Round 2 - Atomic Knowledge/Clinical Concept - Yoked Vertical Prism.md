@@ -1,7 +1,7 @@
 ---
 type: concept
 domain: progressive-lens
-status: raw
+status: needs-review
 source:
   - "[[Study Note 05 - Understanding Prism Thinning]]"
 related:
@@ -22,21 +22,21 @@ Yoked vertical prism is equal vertical prism in both eyes; it shifts the perceiv
 
 ## Application
 
-### Engineering
+### Clinical / Wearer Example
 
-Use this note as a checklist item when reading design equations, target maps, optimizer variables, or surface-analysis code. Confirm the code object, variable, or calculation that corresponds to this concept before assuming the implementation matches the optical intent.
+A real patient example is replacing one PAL lens: if the new lens is prism-thinned differently from the mate, vertical image mismatch can produce eyestrain or diplopia.
 
-### Clinical / Application
+### Engineering / Code Example
 
-Record how this concept affects wearer performance, usable zones, adaptation, binocular comfort, or fitting decisions when that connection is known. If the clinical relevance is indirect, keep the link explicit rather than overstating it.
+In design/code, check whether thickness, frame shape, PRP location, vertical prism, or prism-thinning is modeled at all, or left to downstream lab software.
 
-### Industrial / Product
+### Industrial / Product Example
 
-Record how this concept affects manufacturing, verification, markings, frame/lab workflow, product design, or commercial PAL constraints when applicable.
+In lab production, this is a surfacing/verification issue: PRP prism readings, engravings, frame cutout, center/edge thickness, and computed thinning all affect whether the pair is acceptable.
 
-### Implementation Hook
+### Measurement / Verification Example
 
-During Ben-code review, search for names, comments, plots, target functions, or class methods that correspond to `Yoked Vertical Prism`. Add exact file/function references here after the code is read.
+Measure vertical prism at the PRP for both eyes, compare net imbalance, and check center/edge thickness before and after thinning or replacement.
 
 ## Meta
 

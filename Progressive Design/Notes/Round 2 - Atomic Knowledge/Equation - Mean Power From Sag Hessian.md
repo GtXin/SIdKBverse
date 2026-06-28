@@ -1,7 +1,7 @@
 ---
 type: equation
 domain: progressive-lens
-status: active
+status: needs-review
 source:
   - "[[Study Note 03 - Modern Ophthalmic Optics Alonso Progressive Lenses]]"
   - "[[Study Note 04 - Fundamentals of Progressive Addition Lens Design]]"
@@ -49,30 +49,21 @@ If coordinates are in millimeters, the derivative scaling must be converted befo
 
 ## Application
 
-### Engineering
+### Clinical / Wearer Example
 
-Code audit questions:
+A wearer never sees the Hessian directly, but its derived mean-power and cylinder maps predict where the PAL will give clear distance/near zones versus unwanted blur.
 
-- Is the code multiplying by `(n - 1)`?
-- Does it divide by `2` after summing curvature components?
-- Are derivative units converted correctly?
-- Is mean power calculated from principal curvature sum or from `zxx + zyy` directly?
-- Is this surface power later compared against a target power map?
+### Engineering / Code Example
 
-### Clinical / Design
+In Ben's MATLAB, inspect the derivative path from sag to `zxx`, `zyy`, `zxy`, then to principal curvatures, mean power, and cylinder. Verify unit scaling before comparing to diopters.
 
-Mean power is the surface-design proxy for progressive add distribution. In Ben's early implementation, it is likely one of the central optimization targets before full ray/user-power modeling.
+### Industrial / Product Example
 
-### Implementation Hook
+In freeform design software, this is the internal surface-analysis layer that converts a generated sag surface into maps used for design approval and production release.
 
-Search Ben's code for:
+### Measurement / Verification Example
 
-- `mean power`
-- `power`
-- `target_power`
-- `SURF.index`
-- `PAL.Targets`
-- merit-function terms comparing actual and target power
+Compare computed power/cylinder maps against plotted contour maps or surface-analysis output; if possible, later compare against Rotlex/lensmeter/freeform verification data.
 
 ## Meta
 

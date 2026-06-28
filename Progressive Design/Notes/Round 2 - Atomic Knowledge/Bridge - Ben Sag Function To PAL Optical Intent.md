@@ -1,7 +1,7 @@
 ---
 type: synthesis
 domain: progressive-lens
-status: raw
+status: needs-review
 source:
   - "[[Study Note 01 - PAL Design Summary]]"
   - "[[Study Note 02 - Design of Progressive Spectacle Lenses V1]]"
@@ -23,21 +23,21 @@ This bridge maps Ben's sag-function parameters to PAL optical design purposes su
 
 ## Application
 
-### Engineering
+### Clinical / Wearer Example
 
-Use this note as a checklist item when reading design equations, target maps, optimizer variables, or surface-analysis code. Confirm the code object, variable, or calculation that corresponds to this concept before assuming the implementation matches the optical intent.
+Clinical example: use the bridge to explain how a mathematical or code object becomes a wearer-visible outcome such as blur, swim, clear-zone width, or binocular comfort.
 
-### Clinical / Application
+### Engineering / Code Example
 
-Record how this concept affects wearer performance, usable zones, adaptation, binocular comfort, or fitting decisions when that connection is known. If the clinical relevance is indirect, keep the link explicit rather than overstating it.
+Engineering example: trace one chain from source equation to Ben variable/function to output map or optimization residual.
 
-### Industrial / Product
+### Industrial / Product Example
 
-Record how this concept affects manufacturing, verification, markings, frame/lab workflow, product design, or commercial PAL constraints when applicable.
+Industrial example: identify what downstream manufacturing or verification step is affected when the optical design choice changes.
 
-### Implementation Hook
+### Measurement / Verification Example
 
-During Ben-code review, search for names, comments, plots, target functions, or class methods that correspond to `Ben Sag Function To PAL Optical Intent`. Add exact file/function references here after the code is read.
+Measurement example: define which map, plot, lensmeter/PRP check, surface measurement, or wearer-fitting value can test the bridge.
 
 ## Meta
 

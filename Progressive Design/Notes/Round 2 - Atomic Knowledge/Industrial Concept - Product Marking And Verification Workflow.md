@@ -1,7 +1,7 @@
 ---
 type: concept
 domain: progressive-lens
-status: raw
+status: needs-review
 source:
   - "[[Study Note 02 - Design of Progressive Spectacle Lenses V1]]"
   - "[[Study Note 03 - Modern Ophthalmic Optics Alonso Progressive Lenses]]"
@@ -23,21 +23,21 @@ Product marking and verification workflow links removable marks, permanent engra
 
 ## Application
 
-### Engineering
+### Clinical / Wearer Example
 
-Use this note as a checklist item when reading design equations, target maps, optimizer variables, or surface-analysis code. Confirm the code object, variable, or calculation that corresponds to this concept before assuming the implementation matches the optical intent.
+In a PAL consultation, `Product Marking And Verification Workflow` is relevant when explaining why a wearer may experience blur, distortion, adaptation difficulty, or a fitting-dependent change in usable vision.
 
-### Clinical / Application
+### Engineering / Code Example
 
-Record how this concept affects wearer performance, usable zones, adaptation, binocular comfort, or fitting decisions when that connection is known. If the clinical relevance is indirect, keep the link explicit rather than overstating it.
+In Ben-code inspection, `Product Marking And Verification Workflow` is a named concept to map to a specific variable, function, plot, target, constraint, or class method before deciding whether the implementation covers it.
 
-### Industrial / Product
+### Industrial / Product Example
 
-Record how this concept affects manufacturing, verification, markings, frame/lab workflow, product design, or commercial PAL constraints when applicable.
+In a lab/product workflow, `Product Marking And Verification Workflow` should be checked against what can be manufactured, marked, verified, edged, fitted, or sold as a repeatable PAL design feature.
 
-### Implementation Hook
+### Measurement / Verification Example
 
-During Ben-code review, search for names, comments, plots, target functions, or class methods that correspond to `Product Marking And Verification Workflow`. Add exact file/function references here after the code is read.
+In verification, `Product Marking And Verification Workflow` should have an observable or computable check: a map, curve, prism reading, fitting measurement, tolerance, or before/after comparison.
 
 ## Meta
 

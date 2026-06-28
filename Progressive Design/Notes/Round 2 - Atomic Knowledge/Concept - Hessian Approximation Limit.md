@@ -1,7 +1,7 @@
 ---
 type: concept
 domain: progressive-lens
-status: active
+status: needs-review
 source:
   - "[[Study Note 03 - Modern Ophthalmic Optics Alonso Progressive Lenses]]"
   - "[[Study Note 04 - Fundamentals of Progressive Addition Lens Design]]"
@@ -49,28 +49,21 @@ It becomes risky when:
 
 ## Application
 
-### Engineering
+### Clinical / Wearer Example
 
-Code audit questions:
+A wearer never sees the Hessian directly, but its derived mean-power and cylinder maps predict where the PAL will give clear distance/near zones versus unwanted blur.
 
-- Is Ben using Hessian maps as a development proxy or final optical performance?
-- Does the code later include ray tracing, wavefront power, or user-power calculation?
-- Are optimization targets explicitly surface-power/cylinder targets?
-- Are results labeled as surface maps rather than as-worn performance?
+### Engineering / Code Example
 
-### Clinical / Design
+In Ben's MATLAB, inspect the derivative path from sag to `zxx`, `zyy`, `zxy`, then to principal curvatures, mean power, and cylinder. Verify unit scaling before comparing to diopters.
 
-The low-slope Hessian model can explain why PAL surfaces generate unwanted astigmatism, but wearer performance depends on position of use, eye rotation, lens tilt, frame geometry, binocular effects, and ray/wavefront behavior.
+### Industrial / Product Example
 
-### Implementation Hook
+In freeform design software, this is the internal surface-analysis layer that converts a generated sag surface into maps used for design approval and production release.
 
-Use this note when reading:
+### Measurement / Verification Example
 
-- `C_Wavefront`
-- `C_PAL_Surface`
-- surface metric methods
-- target/merit-function code
-- any future raytrace or eye-model code
+Compare computed power/cylinder maps against plotted contour maps or surface-analysis output; if possible, later compare against Rotlex/lensmeter/freeform verification data.
 
 ## Meta
 

@@ -1,7 +1,7 @@
 ---
 type: concept
 domain: progressive-lens
-status: active
+status: needs-review
 source:
   - "[[Study Note 02 - Design of Progressive Spectacle Lenses V1]]"
   - "[[Study Note 03 - Modern Ophthalmic Optics Alonso Progressive Lenses]]"
@@ -30,40 +30,21 @@ In this vault, `x` and `y` are lens/surface coordinates and `z` is surface sag o
 
 ## Application
 
-### Engineering
+### Clinical / Wearer Example
 
-For code inspection, first identify where the implementation defines:
+For the wearer, the surface type matters through effective power, peripheral error, distortion, thickness, and how stable the image feels away from the fitting cross.
 
-- coordinate arrays: `x`, `y`
-- sag values: `z`, `SAG`, or equivalent
-- surface parameters controlling base curvature, add profile, and correction terms
-- derivative calculations used to turn sag into power and cylinder maps
+### Engineering / Code Example
 
-The code should preserve the direction:
+In Ben's sag code, identify whether the base term is exact sphere/conic sag, a local paraboloid approximation, a toric/cylindrical component, or a progressive/freeform correction.
 
-```text
-sag surface -> derivatives -> curvature/power/cylinder maps
-```
+### Industrial / Product Example
 
-If the code assigns power/cylinder maps directly, check whether those maps are targets/weights or derived measurements.
+In manufacturing, this maps to whether the surface can be generated as a standard base curve, toric/aspheric surface, or freeform digital surface.
 
-### Clinical / Design
+### Measurement / Verification Example
 
-PAL clinical behavior is not specified directly by a sag surface alone. The sag surface is the physical carrier from which power progression, unwanted astigmatism, skew/distortion, prism, and eventually user power are derived.
-
-### Implementation Hook
-
-Likely Ben-code targets:
-
-- `BW_PAL_SurfaceSAG_V1`
-- `SURF.sphere`
-- `SURF.k`
-- `SURF.add`
-- `SURF.y0`
-- `SURF.NRP_y`
-- `SURF.off_edge_y`
-- `SURF.cx2`
-- spline or `griddedInterpolant` fields
+Check sag, slope, and curvature maps over aperture; for a sphere/paraboloid comparison, verify that exact curvature and raw sag Hessian are not being conflated off vertex.
 
 ## Meta
 

@@ -1,7 +1,7 @@
 ---
 type: concept
 domain: progressive-lens
-status: raw
+status: active
 source:
   - "[[Study Note 02 - Design of Progressive Spectacle Lenses V1]]"
   - "[[Study Note 03 - Modern Ophthalmic Optics Alonso Progressive Lenses]]"
@@ -23,21 +23,21 @@ Minkwitz theorem captures the local PAL constraint that a changing addition prof
 
 ## Application
 
-### Engineering
+### Clinical / Wearer Example
 
-Use this note as a checklist item when reading design equations, target maps, optimizer variables, or surface-analysis code. Confirm the code object, variable, or calculation that corresponds to this concept before assuming the implementation matches the optical intent.
+A patient example is choosing a short-corridor PAL for a shallow frame: near access improves, but peripheral unwanted astigmatism and adaptation load can increase. The key observation is that a smooth addition profile cannot be made astigmatism-free over the whole lens; the designer chooses where the lateral astigmatism is placed and how abruptly it rises.
 
-### Clinical / Application
+### Engineering / Code Example
 
-Record how this concept affects wearer performance, usable zones, adaptation, binocular comfort, or fitting decisions when that connection is known. If the clinical relevance is indirect, keep the link explicit rather than overstating it.
+In Ben's code, inspect the meridian/add profile and whether the corridor is treated as an umbilical or low-cylinder path while lateral correction terms redistribute cylinder. Barbero and Gonzalez summarize the classical Minkwitz theorem as linking the lateral cylinder derivative to the derivative of principal curvature along the principal line, while also showing that exact admissibility requires broader compatibility conditions.
 
-### Industrial / Product
+### Industrial / Product Example
 
-Record how this concept affects manufacturing, verification, markings, frame/lab workflow, product design, or commercial PAL constraints when applicable.
+In product design, this drives the trade between compact-frame designs, soft designs, wide clear zones, add range, and market positioning. A manufacturer cannot specify arbitrary mean-power progression and zero cylinder everywhere; the optical map must still come from an admissible surface.
 
-### Implementation Hook
+### Measurement / Verification Example
 
-During Ben-code review, search for names, comments, plots, target functions, or class methods that correspond to `Minkwitz Theorem`. Add exact file/function references here after the code is read.
+Check corridor power profile, cylinder contours beside the corridor, and map spacing/gradient for add and corridor-length comparisons. If add changes along an intended low-cylinder corridor, lateral cylinder growth is expected evidence of the PAL geometry, not automatically a fabrication defect.
 
 ## Meta
 
@@ -48,6 +48,10 @@ This Round 2 atomic note defines `Minkwitz Theorem` as a reusable Obsidian knowl
 ### Source Basis
 
 This note is derived from the current Round 1 study layer, especially [[Study Note 02 - Design of Progressive Spectacle Lenses V1]], [[Study Note 03 - Modern Ophthalmic Optics Alonso Progressive Lenses]], [[Study Note 04 - Fundamentals of Progressive Addition Lens Design]]. It should remain generic and reusable; source-specific details should stay linked rather than copied wholesale.
+
+Additional literature observation: Barbero and Gonzalez describe PALs as surfaces with spatially varying curvature and state that smooth PAL surfaces cannot generally provide spatially varying mean curvature without introducing undesired astigmatism except along umbilical lines. They also show that exact compatibility involves more than the classical Minkwitz expression, including geodesic curvature terms along orthogonal lines of curvature.
+
+Citation: Sergio Barbero and Maria del Mar Gonzalez, `Admissible surfaces in progressive addition lenses`, 2020, https://arxiv.org/abs/2007.02710.
 
 ### Related Notes
 
